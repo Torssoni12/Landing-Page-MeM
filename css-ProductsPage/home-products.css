@@ -1,0 +1,150 @@
+:root {
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
+    --font-keywords: "Lobster", sans-serif;
+
+    --title-weight: 700;
+    --paragraph-weight: 600;
+
+    --primary-color-blue: #2563EB;
+    --second-color-blue: #3B82F6;
+    --accent-color: #60A5FA;
+    --color-hover: #080F28;
+    --subtittles: #5a6a77;
+    --secondary-text: #FFF;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-weight);
+    font-style: normal;
+    overflow-x: hidden;
+    background-color: #F1F5F9;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}   
+.tittle-sections{
+    margin-top:  2rem;
+    font-size: 30px;
+    color: #003366;
+    margin-left: 4rem;
+}
+.Section-Faq .tittle-sections{
+    margin-top:  2rem;
+    margin-bottom:  2rem;
+    font-size: 30px;
+    color: #003366; 
+}
+  @media (max-width: 900px) {
+    .tittle-sections{
+        
+        margin-left: 1rem;
+        font-size: 24px;
+    }
+    .Section-Faq .tittle-sections{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+  }
+
+    /* ============== BAIXAR CATALOGO ================= */
+  .nosso-catalogo{
+    margin-top: 2rem;
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -6rem;
+  }
+  .image-content img{
+    max-width: 500px;
+    object-fit: cover;
+  }
+  .catalogo-content{
+
+    margin-left: 1rem;
+  }
+  .catalogo-content h2{
+    color: #003366;
+    margin:0;
+    font-size: 2rem;
+    text-align:start;
+  }
+  .catalogo-content p{
+    font-size: 1rem;
+    margin: 0.7rem 0 5rem 0;
+    text-align:start;
+    color: #5a6a77;
+  }
+  .catalogo-cta {
+  text-decoration: none;
+  width: 18rem;
+  background: linear-gradient(-45deg,
+      #003366,
+      #0057b8
+  );
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  color: white !important;
+  padding: .75rem 1.5rem;
+  border-radius: 7px;
+  font: 500 var(--small-font-size) var(--body-font);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+ }
+/* Tablet: reduz respiro do texto */
+@media (max-width: 900px){
+  .catalogo-content p{
+    margin:0.7rem 0 1.5rem 0;
+  }
+}
+
+/* Mobile: empilha imagem e conteúdo */
+@media (max-width: 750px){
+  .nosso-catalogo{
+    margin-bottom: 0;
+    flex-direction:column;
+    gap:1.5rem;
+  }
+  .image-content,
+  .catalogo-content{
+    width:100%;
+    margin-left:0;
+  }
+  .image-content img{
+    width: 400px;
+  }
+  .catalogo-content h2,
+  .catalogo-content p{
+    text-align:center;
+  }
+
+  .catalogo-cta{
+    margin:0 auto;
+  }
+}

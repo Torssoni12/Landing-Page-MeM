@@ -1,0 +1,109 @@
+/* SEÇÃO INTEIRA */
+.container-Partnes {
+    margin-bottom: 2rem;
+    width: 100%;
+    
+    overflow: hidden;
+    background-color: #f8f6f6;
+}
+
+/* TÍTULO */
+.Parceiros {
+    width: 100%;
+    text-align: center;
+}
+
+.text-parceries {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* LINHA ABAIXO DO TÍTULO */
+.text-parceries hr {
+    border: none;
+    margin: 15px auto 0;
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(to left, transparent, #2563EB);
+}
+
+/* ÁREA ONDE OS LOGOS PASSAM */
+.logos {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+/* CADA GRUPO DE LOGOS */
+.logo-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+    width: 100%;
+    gap: 70px;
+    
+    animation: deslizar 20s linear infinite;
+}
+
+/* LOGOS */
+.logo-img,
+.logo_img {
+    width: 140px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+    
+    filter: grayscale(100%);
+    opacity: 0.7;
+    
+    transition: 
+        filter 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.logo-img:hover,
+.logo_img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* ANIMAÇÃO */
+@keyframes deslizar {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* PAUSA AO PASSAR O MOUSE */
+.logos:hover .logo-slide {
+    animation-play-state: paused;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .text-parceries {
+        font-size: 25px;
+    }
+
+    .logo-slide {
+        gap: 40px;
+    }
+
+    .logo-img,
+    .logo_img {
+        width: 110px;
+        height: 65px;
+    }
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =========================
+   VARIÁVEIS
+========================= */
+:root {
+    --title-font: "Stack Sans Headline", sans-serif;
+    --paragraph-font: "Stack Sans Headline", sans-serif;
+    --title-weight: 700;
+    --paragraph-weight: 600;
+      /*========== Colors ==========*/
+    --primary-color-blue: #2563EB;
+    --second-color-blue: #3B82F6;
+    --accent-color: #60A5FA;
+    --color-hover: #080F28;
+    --subtittles: #5a6a77;
+    --secondary-text:#FFF;
+    --text-color: #ffffff;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: var(--paragraph-font);
+    font-optical-sizing: auto;
+    font-weight: var(--paragraph-weight);
+    font-style: normal;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;   /* garante tela cheia mesmo com pouco conteúdo */
+    width: 100%;
+}
+h1 {
+    margin-left: 20px;
+    font-family: var(--title-font);
+    font-size: 35px;
+    text-align: center;
+}
+
+.keywords-text{
+    font-family: var(--font-keywords);
+    color: #2563EB;
+    font-size: 40px;
+    margin-left:0;
+    text-shadow: -10px 10px 10px  rgba(200, 200, 200, 0.8);
+    
+}
+.flutuar{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    animation: flutuar 3s ease-in-out infinite;
+}
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+.section-tittles{
+    margin-top: 3rem;
+    margin-bottom:0;
+}
+  /* ============== BAIXAR CATALOGO ================= */
+  .nosso-catalogo{
+    width: 100%;
+    max-height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .image-content{
+    width: 50%;
+    height: 100%;
+  }
+  .image-content img{
+    max-width: 600px;
+    object-fit: cover;
+  }
+  .catalogo-content{
+    width: 50%;
+    height: 100%;
+    margin-left: 1rem;
+  }
+  .catalogo-content h2{
+    color: #003366;
+    margin:0;
+    font-size: 2rem;
+    text-align:start;
+  }
+  .catalogo-content p{
+    font-size: 1rem;
+    margin: 0.7rem 0 5rem 0;
+    text-align:start;
+    color: #5a6a77;
+  }
+  .catalogo-cta {
+  text-decoration: none;
+  width: 18rem;
+  background: linear-gradient(-45deg,
+      #003366,
+      #0057b8
+  );
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  color: white !important;
+  padding: .75rem 1.5rem;
+  border-radius: 7px;
+  font: 500 var(--small-font-size) var(--body-font);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* Tablet: reduz respiro do texto */
+@media (max-width: 900px){
+  .catalogo-content p{
+    margin:0.7rem 0 1.5rem 0;
+  }
+}
+
+/* Mobile: empilha imagem e conteúdo */
+@media (max-width: 750px){
+  .nosso-catalogo{
+    flex-direction:column;
+    gap:1.5rem;
+  }
+  .image-content,
+  .catalogo-content{
+    width:100%;
+    margin-left:0;
+  }
+  .image-content img{
+    width: 400px;
+  }
+  .catalogo-content h2,
+  .catalogo-content p{
+    text-align:center;
+  }
+
+  .catalogo-cta{
+    margin:0 auto;
+  }
+}
+ 
+ 

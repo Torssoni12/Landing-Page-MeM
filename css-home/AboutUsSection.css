@@ -1,0 +1,286 @@
+ /* =========================
+    INICIO - SOBRE NOS
+========================= */
+
+.about-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem 1.5rem;
+}
+
+
+/* =========================
+   FUNDO AZUL
+========================= */
+
+.fundo_Azul {
+    position: absolute;
+    z-index: 0;
+
+    top: calc(50% + 30px);
+    left: calc(50% + 25px);
+
+    transform: translate(-50%, -50%);
+
+    width: min(1110px, calc(100% - 3rem));
+    height: 510px;
+
+    background: #2563EB;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.container-about {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+
+    width: min(1100px, 100%);
+    min-height: 490px;
+    height: auto;
+
+    background: #f8f6f6;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADLINE
+========================= */
+
+.container-about .headline {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+
+/* =========================
+   COLUNA DIREITA
+========================= */
+
+.right {
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 50%;
+    height: auto;
+}
+
+.right .titulo {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+
+    margin: 3rem 0 0 1rem;
+}
+
+.right .descricao {
+    padding-left: 2rem;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   COLUNA ESQUERDA
+========================= */
+
+.left {
+    margin: 8rem 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 50%;
+    height: auto;
+}
+
+.left .titulo {
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+}
+
+.left .descricao {
+    font-size: 15px;
+    margin-top: 0.7rem;
+    line-height: 1.6;
+    color: var(--subtittles);
+}
+
+.left .image {
+    margin: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+.left .image img {
+    width: 50%;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .container-about {
+        width: 100%;
+    }
+
+    .right {
+        margin: 1.5rem;
+    }
+
+    .left {
+        margin: 6rem 1.5rem 1.5rem;
+    }
+
+    .fundo_Azul {
+        width: calc(100% - 2rem);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .about-section {
+        min-height: auto;
+
+        padding: 0;
+    }
+
+    /* Container vira uma coluna */
+
+    .container-about {
+        flex-direction: column;
+
+        width: 100%;
+        min-height: auto;
+
+        padding: 1.5rem;
+        border: none;
+    }
+
+
+    /* Fundo azul acompanha
+       o novo tamanho */
+
+    .fundo_Azul {
+        display: none;
+    }
+    /* Colunas ocupam toda a largura */
+    .right,
+    .left {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+    }
+    /* Espaçamento entre os blocos */
+    .right {
+        margin-bottom: 2.5rem;
+    }
+
+
+    .left {
+        margin-top: 0.5rem;
+    }
+
+
+    /* Título principal */
+
+    .container-about .headline {
+        font-size: clamp(2rem, 9vw, 2.5rem);
+    }
+
+
+    /* Títulos */
+
+    .right .titulo{
+        font-size: clamp(1.5rem, 7vw, 1.875rem);
+        margin: 2rem 0 0;
+    }
+
+    .left .titulo{
+        font-size: clamp(1.5rem, 7vw, 1.875rem);
+    }
+
+    /* Textos */
+
+    .right .descricao {
+        padding-left: 0;
+    }
+
+    .right .descricao,
+    .left .descricao {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 400px) {
+
+    .about-section {
+        padding: 3rem 0.75rem;
+    }
+
+    .container-about {
+        padding: 1.25rem;
+    }
+
+    .fundo_Azul {
+        left: calc(50% + 8px);
+    }
+
+    .container-about .headline {
+        font-size: 2rem;
+    }
+
+    .right .titulo,
+    .left .titulo {
+        font-size: 1.5rem;
+    }
+}
+
+/* =========================
+    FIM - SOBRE NOS
+========================= */

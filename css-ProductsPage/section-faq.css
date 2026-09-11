@@ -1,0 +1,133 @@
+
+.Section-Faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+.Section-Faq .content-card{
+    margin: 0 3rem 0 3rem;
+    width: 100%;
+    max-width: 900px;
+}
+.subtitle-products {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 90%;
+    opacity: 0.9;
+}
+ 
+/* ===== cards de serviço ===== */
+.card {
+    background: transparent;
+    border: 1px solid #00000023;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 25px;
+}
+ 
+.card:last-child { margin-bottom: 0; }
+ 
+.card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    transition: 10s ease;
+}
+.card-title :hover{
+    color: var(--primary-color-blue);
+    font-weight: 600;
+
+}
+
+ 
+.card-title h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    flex: 1;
+}
+ 
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color-blue);
+    font-size: 18px;
+    padding: 4px;
+    transition: transform .3s ease;
+}
+ 
+.toggle-btn.rotated {
+    transform: rotate(180deg);
+}
+ 
+.card-description {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .35s ease, opacity .35s ease, margin-top .35s ease;
+}
+ 
+.card-description.ativo {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
+}
+ 
+.card-description p {
+    margin: 0.5rem;
+    text-align: left;
+    line-height: 1.6;
+    color: #444;
+    font-size: 17px;
+}
+ 
+/* ... resto igual ... */
+
+@media (max-width: 900px) {
+    .Section-Faq {
+        min-height: auto;
+    }
+
+    .Section-Faq .content-card {
+        margin: 0 1rem;
+        background-color: #f8f4f4;    
+        box-shadow: none;
+        flex-direction: column;
+        padding: 0 1rem 0 1rem;
+        gap: 30px;
+        border-radius: 0;
+        border: 1px solid #cecece;
+    }
+
+    .card {
+        padding: 15px 18px;
+    }
+
+    .card-title h3 {
+        font-size: 16px;
+    }
+
+    .card-description p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .subtitle-products {
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
