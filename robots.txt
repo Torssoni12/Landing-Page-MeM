@@ -1,7 +1,140 @@
-sitemap: https://meminox.com/sitemap.xml
+<footer>
 
-User-agent: *
-Allow: /
+    <!-- REDES SOCIAIS -->
+    <div class="sociais-part">
+
+        <div class="logo">
+            <img
+                src="/assets/LogoMeM-500x500.png"
+                alt="MeMInox"
+                class="img-logo"
+            >
+        </div>
+
+        <div class="sociais">
+
+            <a
+                href="#"
+                class="social-link facebook"
+                aria-label="Facebook da MeMInox"
+            >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="#"
+                class="social-link instagram"
+                aria-label="Instagram da MeMInox"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+                href="#"
+                class="social-link linkedin"
+                aria-label="LinkedIn da MeMInox"
+            >
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+        </div>
+
+    </div>
 
 
+    <!-- CONTEÚDO -->
+    <div id="footer_content">
 
+        <!-- CONTATOS -->
+        <div id="footer-contacts">
+
+            <div class="info-card">
+
+                <div class="icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+
+                <div class="info-card-text">
+                    <h3>ATENDIMENTO COMERCIAL</h3>
+                    <p>+55 (16) 3661-5000</p>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    <i class="fas fa-at"></i>
+                </div>
+
+                <div class="info-card-text">
+                    <h3>E-MAIL</h3>
+                    <p>MeMVendas@gmail.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="icon">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+
+                <div class="info-card-text">
+                    <h3>ENDEREÇO</h3>
+
+                    <p>
+                        Av. Manoel Bernardes do Nascimento<br>
+                        Batatais - SP, 14312-400
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PÁGINAS -->
+        <ul class="footer-list">
+
+            <li>
+                <h3>Páginas</h3>
+            </li>
+
+            <li>
+                <a href="/index.html">Início</a>
+            </li>
+
+            <li>
+                <a href="/catalogo-produtos/">Produtos</a>
+            </li>
+
+            <li>
+                <a href="/sobre-nos/">Sobre nós</a>
+            </li>
+
+        </ul>
+
+
+        <!-- ORÇAMENTO -->
+        <div id="footer-subscribe">
+
+            <h1>Solicite um Orçamento</h1>
+
+            <a href="https://wa.me/5516920018790?text=Ol%C3%A1%21%20Conheci%20as%20solu%C3%A7%C3%B5es%20da%20MeMInox%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="btn-fo">
+                SOLICITAR ORÇAMENTO
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div id="footer_copyright">
+        © 2026 MeMInox. Todos os direitos reservados.
+    </div>
+
+</footer>
