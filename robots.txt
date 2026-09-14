@@ -1,0 +1,7 @@
+sitemap: https://meminox.com/sitemap.xml
+
+User-agent: *
+Allow: /
+
+
+
