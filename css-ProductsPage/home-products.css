@@ -69,14 +69,13 @@ body {
 
     /* ============== BAIXAR CATALOGO ================= */
   .nosso-catalogo{
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 100%;
     max-height: 500px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: -6rem;
   }
   .image-content img{
     max-width: 500px;
