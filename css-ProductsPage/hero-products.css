@@ -1,0 +1,127 @@
+:root {
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
+    --font-keywords: "Lobster", sans-serif;
+
+    --title-weight: 700;
+    --paragraph-weight: 600;
+
+    --primary-color-blue: #2563EB;
+    --second-color-blue: #3B82F6;
+    --accent-color: #60A5FA;
+    --color-hover: #080F28;
+    --subtittles: #5a6a77;
+    --secondary-text: #FFF;
+    --text-color: #F1F5F9;
+}
+
+.hero {
+    width: 100%;
+    min-height: 500px;
+    background: url('./images/Hero-banner-lavadorBuchos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem clamp(1.5rem, 5vw, 4rem);
+    justify-content: center;
+}
+
+.text .tittle {
+    margin-top: 5rem;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    color: #FFF;
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+}
+
+.text .subtittle {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #f2f3f5;
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+}
+
+.buttons-hero {
+    margin-top: 1rem;
+}
+
+.buttons-hero .hero-cta-button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: #003366;
+    background-size: 200% 200%;
+    animation: gradient 12s ease infinite;
+    color: var(--text-color) !important;
+    font-family: var(--title-font);
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    white-space: nowrap;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons-hero .hero-cta-button:hover,
+.buttons-hero .hero-cta-button:focus-visible {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .hero {
+        min-height: 420px;
+    }
+    .text {
+        max-width: 100%;
+    }
+    .text .subtittle {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero {
+        min-height: 380px;
+        align-items: flex-end;
+        background-position: right center;
+    }
+    .text {
+        padding: 1.5rem 1.25rem 2.5rem;
+        background: linear-gradient(to top, rgba(8, 15, 40, 0.85), rgba(8, 15, 40, 0));
+    }
+    .text .subtittle {
+        font-size: 14px;
+    }
+    .buttons-hero .hero-cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
