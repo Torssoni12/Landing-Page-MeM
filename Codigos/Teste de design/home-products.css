@@ -1,0 +1,57 @@
+:root {
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
+    --font-keywords: "Lobster", sans-serif;
+
+    --title-weight: 700;
+    --paragraph-weight: 600;
+
+    --primary-color-blue: #2563EB;
+    --second-color-blue: #3B82F6;
+    --accent-color: #60A5FA;
+    --color-hover: #080F28;
+    --subtittles: #5a6a77;
+    --secondary-text: #FFF;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-weight);
+    font-style: normal;
+    overflow-x: hidden;
+    background-color: #F1F5F9;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}   
+.tittle-sections{
+    font-size: 30px;
+    color: #003366;
+    margin-left: 4rem;
+}
+  @media (max-width: 900px) {
+    .tittle-sections{
+        
+        margin-left: 1rem;
+        font-size: 24px;
+    }
+  }

@@ -1,0 +1,109 @@
+/* ============== BAIXAR CATALOGO ================= */
+  .nosso-catalogo{
+    margin: 0;
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -6rem;
+  }
+  .image-content img{
+    max-width: 500px;
+    object-fit: cover;
+  }
+  .catalogo-content{
+
+    margin-left: 1rem;
+  }
+  .catalogo-content h2{
+    color: #003366;
+    margin:0;
+    font-size: 2rem;
+    text-align:start;
+  }
+  .catalogo-content p{
+    font-size: 1rem;
+    margin: 0.7rem 0 5rem 0;
+    text-align:start;
+    color: #5a6a77;
+  }
+  .catalogo-cta {
+  text-decoration: none;
+  width: 18rem;
+  background: linear-gradient(-45deg,
+      #003366,
+      #0057b8
+  );
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  color: white !important;
+  padding: .75rem 1.5rem;
+  border-radius: 7px;
+  font: 500 var(--small-font-size) var(--body-font);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+ }
+/* Tablet: reduz respiro do texto */
+@media (max-width: 900px){
+  .catalogo-content p{
+    margin:0.7rem 0 1.5rem 0;
+  }
+}
+
+/* Mobile: empilha imagem e conteúdo */
+@media (max-width: 750px){
+  .nosso-catalogo{
+    margin-bottom: 0;
+    flex-direction:column;
+    gap:1.5rem;
+  }
+  .image-content,
+  .catalogo-content{
+    width:100%;
+    margin-left:0;
+  }
+  .image-content img{
+    width: 400px;
+  }
+  .catalogo-content h2,
+  .catalogo-content p{
+    text-align:center;
+  }
+
+  .catalogo-cta{
+    margin:0 auto;
+  }
+}
+    /* =================================
+                    BOTÃO
+    =================================*/
+    .button-cta-blue {
+        text-decoration: none;
+        max-width: 300px;
+        background-color: white;
+        color: black;
+        border-radius: 10em;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid black;
+        box-shadow: 0 0 0 0 black;
+    }
+    .button-cta-blue:hover {
+    transform: translateY(5px) translateX(0px);
+    box-shadow: 0 5px 0 0 #2563EB;
+    };
+
+    .button-cta-blue:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+    };
+
+ 

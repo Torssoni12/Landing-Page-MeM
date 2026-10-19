@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ondeEstamos.css">
+    <!--===============  FONT-AWESOME   ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <style>
+    .section-location {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    svg {
+        path {
+            transition: .1s;
+        }
+
+        &:hover path {
+            d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
+        }
+    }
+
+    </style>
+    <section class="section-location ">
+            <div class="svg-container">
+                <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
+                <svg viewbox="0 0 800 400" class="svg">
+                <path id="curve" fill="#50c6d8" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+                </path>
+                </svg>
+            </div>
+            <div class="right">
+                <img src="images/FachadaMeM.png" alt="">
+                <button class="button-cta-blue">
+                    AGENDAR UMA VISITA
+                </button>
+            </div>  
+        <div class="left">
+            <h1 class="flutuar">Onde <span class="keywords-text">estamos?</span></h1>
+            <div class="map-box">
+                <iframe title="Localização da MeMInox no mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.885489778293!2d-47.5711927!3d-20.9169262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9e5e4b245dec9%3A0xb08e596680e398fb!2sMEM%20INOX%20INDUSTRIA%2C%20COMERCIO%20DE%20EQUIPAMENTOS%20E%20MAQUINAS%20LTDA.!5e0!3m2!1spt-BR!2sbr!4v1783339071735!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/testes.js"></script>
+</body>
+</html>
